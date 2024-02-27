@@ -1,0 +1,99 @@
+* {
+    font-family: fontNo1;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fontNo1;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+   background-color: hsl(0, 0%, 12%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 16px;
+   padding: 25px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.information {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#name {
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    margin-bottom: 8px;
+}
+
+#mainPara {
+    color: hsl(75, 94%, 57%);
+}
+
+#description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul > li {
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin: 12px;
+    padding: 12px 0;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 6px;
+    width: 280px;
+    text-align: center
+}
+
+li:hover {
+ color: hsl(75, 94%, 57%);
+}
+
+@media (min-width: 375px) {
+    .container {
+        padding: 12px;
+        height: auto;
+        min-width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        min-width: 380px;
+    }
+}
